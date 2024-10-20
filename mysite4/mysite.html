@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Красная панда</title>
+	<link rel="stylesheet" href="mysite.css">
+</head>
+
+<body>
+	<button id="theme-toggle">Сменить на светлую тему</button>
+	<div class="container" id="container">
+		<img src="red-panda.webp" alt="Редкая панда" class="responsive-image">
+		<h1 class="title">Красная панда</h1>
+		<p class="text">Красная панда — это маленькое млекопитающее, обитающее в горных лесах Восточной Гималаи и
+			юго-восточной Азии.</p>
+
+		<h2>Информация о красной панде</h2>
+		<p><strong>Рацион:</strong> Красные панды в основном питаются бамбуком, но также могут есть фрукты, ягоды и
+			насекомых.</p>
+		<p><strong>Среда обитания:</strong> Они обитают в высокогорных лесах Восточной Гималаи и юго-восточной Азии.</p>
+		<p><strong>Цвет меха:</strong> Мех рыжевато-коричневого цвета с черными ногами и белыми отметинами.</p>
+		<p><strong>Количество детенышей:</strong> Обычно от одного до четырех детенышей за раз.</p>
+		<p><strong>Вес:</strong> Взрослые красные панды могут весить от 3 до 6,5 килограммов.</p>
+
+		<button id="quizButton">Я все прочитал</button>
+	</div>
+
+	<div id="quiz" style="display: none;">
+		<h2>Викторина о красной панде</h2>
+		<p>Теперь проверьте свои знания о красных пандах, ответив на следующие вопросы:</p>
+
+		<div id="questions">
+			<div class="question">
+				<p>1. Какой основной рацион красной панды?</p>
+				<input type="text" class="answer" placeholder="Ваш ответ...">
+				<p class="correct-answer" style="display: none;">бамбук</p>
+			</div>
+			<div class="question">
+				<p>2. Где обитают красные панды?</p>
+				<input type="text" class="answer" placeholder="Ваш ответ...">
+				<p class="correct-answer" style="display: none;">Восточная Гималая и юго-восточная Азия</p>
+			</div>
+			<div class="question">
+				<p>3. Какой цвет меха у красной панды?</p>
+				<input type="text" class="answer" placeholder="Ваш ответ...">
+				<p class="correct-answer" style="display: none;">Рыжевато-коричневый с черными ногами</p>
+			</div>
+			<div class="question">
+				<p>4. Сколько детенышей обычно рожает самка красной панды?</p>
+				<input type="text" class="answer" placeholder="Ваш ответ...">
+				<p class="correct-answer" style="display: none;">От одного до четырех</p>
+			</div>
+			<div class="question">
+				<p>5. Какой вес может достигать взрослая красная панда?</p>
+				<input type="text" class="answer" placeholder="Ваш ответ...">
+				<p class="correct-answer" style="display: none;">От 3 до 6,5 килограммов</p>
+			</div>
+		</div>
+		<button id="submitQuiz">Отправить ответы</button>
+		<p id="result" style="margin-top: 10px;"></p>
+	</div>
+
+	<script src="mysite.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/canvas-confetti/1.4.0/confetti.browser.min.js"></script>
+</body>
+
+</html>
